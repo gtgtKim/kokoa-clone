@@ -2,24 +2,77 @@
 <html>
    <head>
       <style>
-         /* Define the responsive rules for different screen sizes */
-         @media only screen and (max-width: 600px) {
-            body {
-               width: auto;
-               margin: 0;
-            }
-            /* Style the header differently on smaller screens */
-            header {
-               background-color: lightgray;
-               text-align: center;
-            }
+         /* Set the default font family and size */
+         body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+         }
+         /* Style the header */
+         header {
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+         }
+         /* Style the GNB */
+         nav {
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+         }
+         /* Style the main content section */
+         main {
+            margin: 40px;
+         }
+         /* Style the sidebar */
+         aside {
+            background-color: lightgray;
+            float: right;
+            width: 25%;
+            padding: 20px;
+            margin: 40px;
+         }
+         /* Style the common article section */
+         article {
+            background-color: lightgray;
+            padding: 20px;
+            margin: 40px;
+         }
+         /* Style the footer */
+         footer {
+            clear: both;
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
          }
       </style>
    </head>
    <body>
       <header>
-         <h1>Responsive Web Design</h1>
+         <h1>My Website</h1>
       </header>
-      <p>Resize the screen to see the header change on smaller screens.</p>
+      <nav>
+         <a href="#">Home</a> |
+         <a href="#">About</a> |
+         <a href="#">Contact</a>
+      </nav>
+      <main>
+         <h2>Welcome to my website</h2>
+         <p>Here you will find information about me and my interests.</p>
+         <article>
+            <h3>My Latest Trip</h3>
+            <p>I recently visited Paris and had a wonderful time. Read all about my trip in this article.</p>
+         </article>
+         <article>
+            <h3>My Favorite Software Tools</h3>
+            <p>As a software developer, I have a few tools that I simply can't live without. Check out my list here.</p>
+         </article>
+      </main>
+      <aside>
+         <h3>About Me</h3>
+         <p>I am a software developer and love to travel in my free time.</p>
+      </aside>
+      <footer>
+         <p>Copyright &copy; 2023</p>
+      </footer>
    </body>
 </html>
