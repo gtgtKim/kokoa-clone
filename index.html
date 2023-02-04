@@ -1,46 +1,81 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
          /* Set the default font family and size */
          body {
-            font-family: Arial, sans-serif;
+            font-family: 'Malgun Gothic', sans-serif;
             font-size: 16px;
          }
          /* Style the header */
          header {
-            background-color: lightgray;
+            background-color: white;
             padding: 20px;
             text-align: center;
          }
          /* Style the GNB */
          nav {
-            background-color: lightgray;
+            background-color: white;
             padding: 10px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+         }
+         /* Style the GNB links */
+         nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: black;
          }
          /* Style the main content section */
          main {
             margin: 40px;
+            display: flex;
+            flex-wrap: wrap;
          }
          /* Style the sidebar */
          aside {
-            background-color: lightgray;
-            float: right;
+            background-color: white;
             width: 25%;
             padding: 20px;
             margin: 40px;
+            box-shadow: 1px 1px 10px lightgray;
          }
          /* Style the common article section */
          article {
-            background-color: lightgray;
+            background-color: white;
             padding: 20px;
             margin: 40px;
+            width: 60%;
+            box-shadow: 1px 1px 10px lightgray;
+            margin-right: 20px;
+         }
+         /* Style the search bar */
+         form {
+            margin: 20px 0;
+            text-align: center;
+         }
+         /* Style the search input */
+         input[type="text"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: 1px solid gray;
+         }
+         /* Style the search button */
+         input[type="submit"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: gray;
+            color: white;
+            border: none;
+            cursor: pointer;
          }
          /* Style the footer */
          footer {
             clear: both;
-            background-color: lightgray;
+            background-color: white;
             padding: 20px;
             text-align: center;
          }
@@ -48,31 +83,34 @@
    </head>
    <body>
       <header>
-         <h1>My Website</h1>
+         <h1>나의 블로그</h1>
       </header>
       <nav>
-         <a href="#">Home</a> |
-         <a href="#">About</a> |
-         <a href="#">Contact</a>
+         <a href="#">홈</a>
+         <a href="#">카테고리</a>
+         <a href="#">소개</a>
+         <a href="#">연락</a>
       </nav>
       <main>
-         <h2>Welcome to my website</h2>
-         <p>Here you will find information about me and my interests.</p>
-         <article>
-            <h3>My Latest Trip</h3>
-            <p>I recently visited Paris and had a wonderful time. Read all about my trip in this article.</p>
-         </article>
-         <article>
-            <h3>My Favorite Software Tools</h3>
-            <p>As a software developer, I have a few tools that I simply can't live without. Check out my list here.</p>
-         </article>
-      </main>
-      <aside>
-         <h3>About Me</h3>
-         <p>I am a software developer and love to travel in my free time.</p>
-      </aside>
-      <footer>
-         <p>Copyright &copy; 2023</p>
-      </footer>
-   </body>
+         <aside>
+            <form action="#">
+               <input type="text" placeholder="검색어 입력">
+               <input type="submit" value="검색">
+</form>
+<h2>인기 게시글</h2>
+<ul>
+   <li><a href="#">게시글 1</a></li>
+   <li><a href="#">게시글 2</a></li>
+   <li><a href="#">게시글 3</a></li>
+</ul>
+</aside>
+<article>
+   <h2>최신 게시글</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim ornare nisi, vitae mattis nulla ante id dui.</p>
+</article>
+</main>
+<footer>
+   <p>Copyright &copy; 2023 나의 블로그</p>
+</footer>
+</body>
 </html>
